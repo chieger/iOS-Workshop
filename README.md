@@ -1,21 +1,20 @@
 #iOS Workshop
 
-##Tpsy Tip Calculator App
+##Typsy App
 1.  Create a new Xcode Project
   * Select **Single View Application**
   * Set *Language* to **Swift**
   * Set *Devices* to **iPhone**
 
-1.  Orientation
+1.  Orientation and Initial Setup
   * **Play** and **Stop** Button for deploying App to Emulator or Device
   * Select simulated phone or real device
      * When plugging in your phone for the first time, Xcode will download and process symbols. (This takes a minute, but you only have to do this once)
      * If your device is listed as *inelgible device*, you may need to change **Deployment Info -> Deployment Target** to **the version of iOS your device is currently running**
   * Click the *Play* button to build and run your app
   * Left side folders, **Image Assets** and **StoryBoard**
-
-3.  Storyboard
-  * Disable size classes  
+  * Click the Storyboard
+     * Disable size classes  
 ![|800](http://i.imgur.com/zjqYSUT.gif)
 
 4. Build out Static View based on Mock
@@ -33,5 +32,4 @@
      * Set *Font* to **System Bold**	, *Size* **30** for the *Total* Label and *Total Amount* Label.
      * Use ``cmd + =`` to auto resize the label to fit the contents.  
 ![|800](http://i.imgur.com/U8NKdXY.gif) 
-
 
