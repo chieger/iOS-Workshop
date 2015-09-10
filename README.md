@@ -14,6 +14,7 @@
   * Click the *Play* button to build and run your app
   * Left side folders, **Image Assets** and **StoryBoard**
   * Click the Storyboard
+     * Uncheck the *Use Auto Layout* checkbox 
      * Disable size classes  
 ![|800](http://i.imgur.com/zjqYSUT.gif)
 
