@@ -1,6 +1,6 @@
 #iOS Workshop
 
-##Typsy App
+##Tpsy Tip Calculator App
 1.  Create a new Xcode Project
   * Select **Single View Application**
   * Set *Language* to **Swift**
