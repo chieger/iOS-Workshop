@@ -72,28 +72,44 @@ The key to implementing a complex app is to break it up into a bunch of small pi
      - Sign in nav bar as UIImageView 
      - ScrollView
      - Form the background with a blank UIView 
+     - Sign In text as UIImageView 
      - Sign In Form as UIImageView
      - UITextFields for email and password
-     - Sign In text as UIImageView 
      - Sign In button as UIImageView
      - transparent UIButton placed over Sign In button
   - Tapping the Sign In button with either a blank email or blank password should show an error alert. [Using UIAlertController](https://guides.codepath.com/ios/Using-UIAlertController)
   - Tapping the Sign In button with a populated email and password field should display a loading alert for 2 seconds. After the 2 seconds are up, you should do one of the following ([Calling a Method After Delay](https://guides.codepath.com/ios/Calling-a-Method-After-Delay)):
     - Display an error for incorrect email/password.
-    - Go to the tutorial screens.
+    - Go to the tutorial screens via a modal Segue.
 3. Tutorial Screens
   - Create a custom free form view controller that is wide enough for 4 screens. [Creating Custom View Controllers](https://guides.codepath.com/ios/Creating-Custom-View-Controllers), [Creating a Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
-  - Add a UIScrollView with paging enabled and 4 UIImageViews for the welcome screens (Note: we're explicitly not using UIPageViewController, which requires extra coding, to build these screens)
-  - Add a UIPageControl (should be outside the scrollview) and link it with the scrollview. [Using UIPageControl](https://guides.codepath.com/ios/Using-UIPageControl)
-  - Add the "Take Carousel for a Spin" button (should be outside the scrollview). Should have an initial alpha of 0, set the alpha to 1 upon reaching the 4th page.
-  - Tapping the "Take Carousel for a Spin" button should launch the Image Timeline (in a Navigation Controller) modally.
+  - Add a UIScrollView with paging enabled. 
+  - Add 4 UIImageViews for the welcome screens (Note: we're explicitly not using UIPageViewController, which requires extra coding, to build these screens)
+  - Add a UIPageControl 
+     - The UIPageControl should be outside and in front of the scrollview. 
+     - Set the page of the UIPageControl by referencing events from the UIScrollView. [Using UIPageControl](https://guides.codepath.com/ios/Using-UIPageControl)
+  - Add the "Take Carousel for a Spin" button (should be outside the scrollview). 
+     - Set the button to have an initial alpha of 0, 
+     - Upon reaching the 4th page, the alpha should be set to 1 
+  - Tapping the "Take Carousel for a Spin" button should launch the Image Timeline modally.
+     - Since the Image Timeline will have a NavigationController, the above modal Segue should point to the Image Timeline NavigationController. 
 4. Image Timeline
-  - Add a UIImageView for the custom nav bar and a scrollview for the image feed.
-  - Add buttons for Settings and Conversations.
-  - Tapping the Conversation button should push the ConversationsViewController.
-  - Tapping the Settings button should modally present the SettingsViewController.
+  - Add a UIImageView for the custom nav bar
+  - Add a UIScrollView for the image feed.
+  - Add UIButtons for Settings and Conversations.
+  - Tapping the Conversation button should *push* the ConversationsViewController.
+  - Tapping the Settings button should *modally* present the SettingsViewController.
 5. Create Account
   - Add custom nav bar, form background, text fields, text, terms text and button, and Create Account button.
+  - Add all the view elements for the Sign In View Controller in Storyboard
+     - Sign in nav bar as UIImageView 
+     - ScrollView
+     - Form the background with a blank UIView 
+     - Sign In text as UIImageView 
+     - Sign In Form as UIImageView
+     - UITextFields for email and password
+     - Sign In button as UIImageView
+     - transparent UIButton placed over Sign In button
   - Upon showing the keyboard, move the elements to be visible. [Registering for Keyboard Events](https://guides.codepath.com/ios/Registering-for-Keyboard-Events)
   - Add a selected state for the terms button. [Configure a Button](https://guides.codepath.com/ios/Configure-a-Button)
   - Terms opens webview w/ mobile terms of service page.
