@@ -68,7 +68,15 @@ The key to implementing a complex app is to break it up into a bunch of small pi
   - Optional: Register for the scroll view scroll events [Registering for scroll events](https://guides.codepath.com/ios/Using-UIScrollView#registering-for-scroll-events)
   - Optional: Whenever a scroll event happens, configure the transform property on the image view. [Using View Transforms](https://guides.codepath.com/ios/Using-View-Transforms),[Animating View Properties](https://guides.codepath.com/ios/Animating-View-Properties)
 2. Sign In
-  - Add custom nav bar as a UIImageView, form background, text fields, text, and Sign In button.
+  - Add all the view elements for the Sign In View Controller in Storyboard
+     - Sign in nav bar as UIImageView 
+     - ScrollView
+     - Form the background with a blank UIView 
+     - Sign In Form as UIImageView
+     - UITextFields for email and password
+     - Sign In text as UIImageView 
+     - Sign In button as UIImageView
+     - transparent UIButton placed over Sign In button
   - Tapping the Sign In button with either a blank email or blank password should show an error alert. [Using UIAlertController](https://guides.codepath.com/ios/Using-UIAlertController)
   - Tapping the Sign In button with a populated email and password field should display a loading alert for 2 seconds. After the 2 seconds are up, you should do one of the following ([Calling a Method After Delay](https://guides.codepath.com/ios/Calling-a-Method-After-Delay)):
     - Display an error for incorrect email/password.
