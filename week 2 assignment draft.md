@@ -55,20 +55,20 @@ You can download the Carousel assets [here](https://www.dropbox.com/s/53llomcr20
 
 The key to implementing a complex app is to break it up into a bunch of small pieces until it's easy to implement any given piece. You should try implementing this homework by following the milestones below. Be sure to run the simulator frequently as you hit milestones.
 
-0. Setup:
+0. **Setup:**
   - Create a new project (disable Auto Layout). [New Project](https://guides.codepath.com/ios/New-Project-%28designers%29)
   - Add the image assets above. [Adding Image Assets](https://guides.codepath.com/ios/Adding-Image-Assets)
   - Configure the app icon and splash screen. [App icon and launch image](https://guides.codepath.com/ios/Adding-Image-Assets#app-icon-and-launch-image)
   - Add the [Common.swift](https://www.dropbox.com/s/van89swo47j0im1/Common.swift?dl=0) file to your project. Be sure to select "Copy items if needed".
-1. Intro Screen
+1. **Intro Screen**
   - In the Storyboard, add a custom view controller for the IntroViewController. [Creating Custom View Controller](https://guides.codepath.com/ios/Creating-Custom-View-Controllers)
   - Configure the view controller to be freeform, so that you can make it long enough to see the entire intro page. [Creating Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
   - Add UIImageViews for each photo tile in the region below. [Using UIImageView](https://guides.codepath.com/ios/Using-UIImageView)
   - Configure the content size of the scroll view. [Using UIScrollView](https://guides.codepath.com/ios/Using-UIScrollView)
-  - **Optional**: Tiles translate, scale and rotate into palce as user scrolls
+  - **Optional:** Tiles translate, scale and rotate into palce as user scrolls
      - Register for the scroll view scroll events [Registering for scroll events](https://guides.codepath.com/ios/Using-UIScrollView#registering-for-scroll-events)
      - Whenever a scroll event happens, configure the transform property on the image view. [Using View Transforms](https://guides.codepath.com/ios/Using-View-Transforms)
-2. Sign In
+2. **Sign In**
   - Add all the view elements for the Sign In View Controller in Storyboard
      - Sign in nav bar as UIImageView 
      - UIScrollView
@@ -82,7 +82,7 @@ The key to implementing a complex app is to break it up into a bunch of small pi
   - Tapping the Sign In button with a populated email and password field should display a loading alert for 2 seconds. After the 2 seconds are up, you should do one of the following ([Calling a Method After Delay](https://guides.codepath.com/ios/Calling-a-Method-After-Delay)):
     - Display an error for incorrect email/password.
     - Go to the tutorial screens via a modal Segue.
-3. Tutorial Screens
+3. **Tutorial Screens**
   - Create a custom free form view controller that is wide enough for 4 screens. [Creating Custom View Controllers](https://guides.codepath.com/ios/Creating-Custom-View-Controllers), [Creating a Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
   - Add a UIScrollView with paging enabled. 
   - Add 4 UIImageViews for the welcome screens (Note: we're explicitly not using UIPageViewController, which requires extra coding, to build these screens)
@@ -94,13 +94,13 @@ The key to implementing a complex app is to break it up into a bunch of small pi
      - Upon reaching the 4th page, the alpha should be set to 1 
   - Tapping the "Take Carousel for a Spin" button should launch the Image Timeline modally.
      - Since the Image Timeline will have a NavigationController, the above modal Segue should point to the Image Timeline NavigationController. 
-4. Image Timeline
+4. **Image Timeline**
   - Add a UIImageView for the custom nav bar
   - Add a UIScrollView for the image feed.
   - Add UIButtons for Settings and Conversations.
   - Tapping the Conversation button should *push* the ConversationsViewController.
   - Tapping the Settings button should *modally* present the SettingsViewController.
-5. Create Account
+5. **Create Account**
   - Add custom nav bar, form background, text fields, text, terms text and button, and Create Account button.
   - Add all the view elements for the Sign In View Controller in Storyboard
      - Sign in nav bar as UIImageView 
