@@ -70,13 +70,13 @@ The key to implementing a complex app is to break it up into a bunch of small pi
      - Whenever a scroll event happens, configure the transform property on the image view. [Using View Transforms](https://guides.codepath.com/ios/Using-View-Transforms)
 2. **Sign In**
   - Add all the view elements for the Sign In View Controller in Storyboard
-     - Sign_in_nav_bar as UIImageView 
+     - *Sign_in_nav_bar* as UIImageView 
      - UIScrollView
      - Form the background with a blank UIView 
-     - Sign In text as UIImageView 
-     - Sign In Form as UIImageView
+     - **sign_in_text** as UIImageView 
+     - *sign_in_form* as UIImageView
      - UITextFields for email and password
-     - Sign In button as UIImageView
+     - *sign_in_buttons* as UIImageView
      - UIButton placed over Sign In button, transparent
   - When the user touches either textField and the keyboard shows:
      - The scrollView should scroll up to it's fully scrolled position. ``scrollView.contentOffset.y = // max offset ``
