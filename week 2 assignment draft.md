@@ -70,7 +70,7 @@ The key to implementing a complex app is to break it up into a bunch of small pi
 2. Sign In
   - Add all the view elements for the Sign In View Controller in Storyboard
      - Sign in nav bar as UIImageView 
-     - ScrollView
+     - UIScrollView
      - Form the background with a blank UIView 
      - Sign In text as UIImageView 
      - Sign In Form as UIImageView
