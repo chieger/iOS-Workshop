@@ -21,7 +21,7 @@ The purpose of this homework is to leverage views, view properties, and events t
   - User is taken to the tutorial screens upon entering the correct email/password combination.
   - Optional: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
   - Optional: On appear, scale the form up and fade it in.
-- Optional: Sign Up
+- Optional: Create a Dropbox
   - Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
   - Optional: Tapping the Agree to Terms checkbox selects the checkbox.
   - Optional: Tapping on Terms shows a webview with the terms.
