@@ -68,7 +68,7 @@ The key to implementing a complex app is to break it up into a bunch of small pi
   - **Optional:** Tiles translate, scale and rotate into place as user scrolls
      - Register for the scroll view scroll events [Registering for scroll events](https://guides.codepath.com/ios/Using-UIScrollView#registering-for-scroll-events)
      - Whenever a scroll event happens, configure the transform property on the image view. [Using View Transforms](https://guides.codepath.com/ios/Using-View-Transforms)
-2. **Sign In**
+2. **Sign In Screen**
   - Add all the view elements for the Sign In View Controller in Storyboard
      - *Sign_in_nav_bar* as UIImageView 
      - UIScrollView
