@@ -80,10 +80,10 @@ The key to implementing a complex app is to break it up into a bunch of small pi
      - UIButton placed over Sign In button, transparent
   - Tapping the Sign In button
      - If either of the email or ``||`` password fields are blank, ``textField.text!.isEmpty``, show an error alert using a UIAlertViewController. [Using UIAlertController](https://guides.codepath.com/ios/Using-UIAlertController)
-     - If the populated email and ``&&`` password fields have incorrect credentials:
-        - Display an UIActivityIndicator for 2 seconds using a delay closure.
-        - After the delay, display an error for incorrect email/password using a UIAlertController. ([Calling a Method After Delay](https://guides.codepath.com/ios/Calling-a-Method-After-Delay)):
-     - If the populated email and ``&&`` password fields contain the correct credentials:
+     - If the populated email and ``||`` password fields do not match ``!=`` your correct email and password:
+        - Display an UIActivityIndicator for 2 seconds using a delay closure. (Hint: Make sure to download and copy the common.swift file you your project)[Calling a Method After Delay](https://guides.codepath.com/ios/Calling-a-Method-After-Delay
+        - After the delay, display an error for incorrect email/password using a UIAlertController. 
+     - If the populated email and ``&&`` password fields match ``==`` your correct credentials:
         - Display an UIActivityIndicator for 2 seconds using a delay closure.
         - After the delay, transition to the tutorial screen
            - Create a modal Segue from the Sign In UIViewController to the Tutorial UIViewController
