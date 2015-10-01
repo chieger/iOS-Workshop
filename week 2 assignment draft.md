@@ -97,11 +97,11 @@ The key to implementing a complex app is to break it up into a bunch of small pi
      - Dismiss the keyboard ``view.endEditing(true)``
      - Animate the button back to it's original position ``button.transform = CGAffineTransformIdentity``
   - **Optional:** ScrollView should smoothly animate to a specific scrolled up position any time either of the textFields are tapped. 
-     - Get the ``editingDidBegin()`` events and have them share the same method. [Registering For TextField Events](https://github.com/codepath/ios_guides/wiki/Registering-for-text-field-events)
+     - Get the ``editingDidBegin()`` events and have them share the same method. [Registering For TextField Events](https://github.com/codepath/ios_guides/wiki/Registering-for-text-field-events), [Animating View Properties](https://guides.codepath.com/ios/Animating-View-Properties)
 3. **Tutorial Screens**
   - Create a custom free form view controller that is wide enough for 4 screens. [Creating Custom View Controllers](https://guides.codepath.com/ios/Creating-Custom-View-Controllers), [Creating a Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
   - Add a UIScrollView with paging enabled. 
-  - Add 4 UIImageViews for the welcome screens (Note: we're explicitly not using UIPageViewController, which requires extra coding, to build these screens)
+  - Add 4 UIImageViews for the tutorial screens (Note: we're explicitly not using UIPageViewController, which requires extra coding, to build these screens)
   - Add a UIPageControl 
      - The UIPageControl should be outside and in front of the scrollview. 
      - Set the page of the UIPageControl by referencing events from the UIScrollView. [Using UIPageControl](https://guides.codepath.com/ios/Using-UIPageControl)
@@ -118,15 +118,14 @@ The key to implementing a complex app is to break it up into a bunch of small pi
   - Tapping the Settings button should *modally* present the SettingsViewController.
 5. **Create Account**
   - Add custom nav bar, form background, text fields, text, terms text and button, and Create Account button.
-  - Add all the view elements for the Sign In View Controller in Storyboard
+  - Add all the view elements for the Create Account View Controller in Storyboard
      - Sign in nav bar as UIImageView 
      - ScrollView
      - Form the background with a blank UIView 
      - Sign In text as UIImageView 
      - Sign In Form as UIImageView
-     - UITextFields for email and password
-     - Sign In button as UIImageView
-     - transparent UIButton placed over Sign In button
+     - UITextFields
+     - Create Account button as UIImageView
   - Upon showing the keyboard, move the elements to be visible. [Registering for Keyboard Events](https://guides.codepath.com/ios/Registering-for-Keyboard-Events)
   - Add a selected state for the terms button. [Configure a Button](https://guides.codepath.com/ios/Configure-a-Button)
   - Terms opens webview w/ mobile terms of service page.
