@@ -78,6 +78,9 @@ The key to implementing a complex app is to break it up into a bunch of small pi
      - UITextFields for email and password
      - Sign In button as UIImageView
      - UIButton placed over Sign In button, transparent
+  - When the user touches either textField and the keyboard shows:
+     - The scrollView should scroll up to it's fully scrolled position. ``scrollView.contentOffset.y = // max offset ``
+     - The button should animate up above the top of the keyboard. ``button.transfrom = CGAffineTransformMakeTranslation( x, y)``
   - Tapping the Sign In button
      - If either of the email or ``||`` password fields are empty, ``textField.text!.isEmpty``, show an error alert using a UIAlertViewController. [Using UIAlertController](https://guides.codepath.com/ios/Using-UIAlertController)
      - If the populated email or ``||`` password fields do not match ``!=`` your correct email and password:
