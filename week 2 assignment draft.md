@@ -79,17 +79,20 @@ The key to implementing a complex app is to break it up into a bunch of small pi
      - Sign In button as UIImageView
      - UIButton placed over Sign In button, transparent
   - Tapping the Sign In button
-     - If either of the email or ``||`` password fields are blank, ``textField.text!.isEmpty``, show an error alert using a UIAlertViewController. [Using UIAlertController](https://guides.codepath.com/ios/Using-UIAlertController)
-     - If the populated email and ``||`` password fields do not match ``!=`` your correct email and password:
+     - If either of the email or ``||`` password fields are empty, ``textField.text!.isEmpty``, show an error alert using a UIAlertViewController. [Using UIAlertController](https://guides.codepath.com/ios/Using-UIAlertController)
+     - If the populated email or ``||`` password fields do not match ``!=`` your correct email and password:
         - Display an UIActivityIndicator for 2 seconds using a delay closure. (Hint: Make sure to download and copy the common.swift file you your project)[Calling a Method After Delay](https://guides.codepath.com/ios/Calling-a-Method-After-Delay
         - After the delay, display an error for incorrect email/password using a UIAlertController. 
      - If the populated email and ``&&`` password fields match ``==`` your correct credentials:
-        - Display an UIActivityIndicator for 2 seconds using a delay closure.
+        - Display a UIActivityIndicator for 2 seconds using a delay closure.
         - After the delay, transition to the tutorial screen
-           - Create a modal Segue from the Sign In UIViewController to the Tutorial UIViewController
+           - Create, ``ctrl + drag`` a modal Segue from the Sign In UIViewController to the Tutorial UIViewController
            - Trigger the segue, ``performSegueWithIdentifier("loginSegue", sender: nil)``
   - **Optional** The scrollview should only be scrollable when the keyboard is shown.
      - ``scrollView.scrollEnabled = true``, ``scrollView.scrollEnabled = false``
+  - **Optional** Scrolling down a specific amount should: 
+     - Dismiss the keyboard ``view.endEditing(true)``
+     - Animate the button back to it's original position ``button.transform = CGAffineTransformIdentity`` 
 3. **Tutorial Screens**
   - Create a custom free form view controller that is wide enough for 4 screens. [Creating Custom View Controllers](https://guides.codepath.com/ios/Creating-Custom-View-Controllers), [Creating a Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
   - Add a UIScrollView with paging enabled. 
