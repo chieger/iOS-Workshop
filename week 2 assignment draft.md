@@ -65,7 +65,7 @@ The key to implementing a complex app is to break it up into a bunch of small pi
   - Configure the view controller to be freeform, so that you can make it long enough to see the entire intro page. [Creating Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
   - Add UIImageViews for each photo tile in the region below. [Using UIImageView](https://guides.codepath.com/ios/Using-UIImageView)
   - Configure the content size of the scroll view. [Using UIScrollView](https://guides.codepath.com/ios/Using-UIScrollView)
-  - **Optional:** Tiles translate, scale and rotate into palce as user scrolls
+  - **Optional:** Tiles translate, scale and rotate into place as user scrolls
      - Register for the scroll view scroll events [Registering for scroll events](https://guides.codepath.com/ios/Using-UIScrollView#registering-for-scroll-events)
      - Whenever a scroll event happens, configure the transform property on the image view. [Using View Transforms](https://guides.codepath.com/ios/Using-View-Transforms)
 2. **Sign In**
