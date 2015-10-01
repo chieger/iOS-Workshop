@@ -72,10 +72,10 @@ The key to implementing a complex app is to break it up into a bunch of small pi
   - Add all the view elements for the Sign In View Controller in Storyboard
      - *Sign_in_nav_bar* as UIImageView 
      - UIScrollView
-     - Form the background with a blank UIView 
-     - **sign_in_text** as UIImageView 
+     - background as a blank UIView 
+     - *sign_in_text* as UIImageView 
      - *sign_in_form* as UIImageView
-     - UITextFields for email and password
+     - email and password fields as UITextFields
      - *sign_in_buttons* as UIImageView
      - UIButton placed over Sign In button, transparent
   - When the user touches either textField and the keyboard shows:
@@ -91,11 +91,13 @@ The key to implementing a complex app is to break it up into a bunch of small pi
         - After the delay, transition to the tutorial screen
            - Create, ``ctrl + drag`` a modal Segue from the Sign In UIViewController to the Tutorial UIViewController
            - Trigger the segue, ``performSegueWithIdentifier("loginSegue", sender: nil)``
-  - **Optional** The scrollview should only be scrollable when the keyboard is shown.
+  - **Optional:** The scrollview should only be scrollable when the keyboard is shown.
      - ``scrollView.scrollEnabled = true``, ``scrollView.scrollEnabled = false``
-  - **Optional** Scrolling down a specific amount should: 
+  - **Optional:** Scrolling down a specific amount should: 
      - Dismiss the keyboard ``view.endEditing(true)``
-     - Animate the button back to it's original position ``button.transform = CGAffineTransformIdentity`` 
+     - Animate the button back to it's original position ``button.transform = CGAffineTransformIdentity``
+  - **Optional:** ScrollView should smoothly animate to a specific scrolled up position any time either of the textFields are tapped. 
+     - Get the ``editingDidBegin()`` events and have them share the same method. [Registering For TextField Events](https://github.com/codepath/ios_guides/wiki/Registering-for-text-field-events)
 3. **Tutorial Screens**
   - Create a custom free form view controller that is wide enough for 4 screens. [Creating Custom View Controllers](https://guides.codepath.com/ios/Creating-Custom-View-Controllers), [Creating a Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
   - Add a UIScrollView with paging enabled. 
