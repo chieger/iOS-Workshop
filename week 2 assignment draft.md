@@ -108,7 +108,7 @@ The key to implementing a complex app is to break it up into a bunch of small pi
   - Add the "Take Carousel for a Spin" button (should be outside the scrollview). 
   - Tapping the "Take Carousel for a Spin" button should launch the Image Timeline modally.
      - Since the Image Timeline will have a NavigationController, the above modal Segue should point to the Image Timeline NavigationController. 
-  - **Optional:** Upon reaching the 4th page, ``page == 4``:
+  - **Optional:** Upon reaching the 4th page, ``page == 3``, because *page 1* is really *page 0*:
      - The PageContol indicators disappear
         - ``pageControl.hidden = true`` 
      - The *take_for_a_spin* button should fade in. 
