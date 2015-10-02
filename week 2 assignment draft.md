@@ -96,7 +96,7 @@ The key to implementing a complex app is to break it up into a bunch of small pi
      - Dismiss the keyboard ``view.endEditing(true)``
      - Animate the button back to it's original position ``button.transform = CGAffineTransformIdentity``
   - **Optional:** ScrollView should smoothly animate to a specific scrolled up position any time either of the textFields are tapped. 
-     - Get the ``editingDidBegin()`` events and have them share the same method. [Registering For TextField Events](https://github.com/codepath/ios_guides/wiki/Registering-for-text-field-events), [Animating View Properties](https://guides.codepath.com/ios/Animating-View-Properties)
+     - Get the textField events by ``right-clicking`` the text fields and ``ctrl + drag`` to your ViewController code file. Have them share the same method. [Registering For TextField Events](https://github.com/codepath/ios_guides/wiki/Registering-for-text-field-events), [Animating View Properties](https://guides.codepath.com/ios/Animating-View-Properties)
 3. **Tutorial Screens**
   - Create a custom free form view controller that is wide enough for 4 screens. [Creating Custom View Controllers](https://guides.codepath.com/ios/Creating-Custom-View-Controllers), [Creating a Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
   - Add a UIScrollView with paging enabled. 
