@@ -11,14 +11,13 @@ The purpose of this homework is to leverage views, view properties, and events t
 ### Project Requirements
 
 - Static photo tiles on the initial screen
-  - Optional: Photo tiles move with scrolling
+  - **Optional**: Photo tiles move with scrolling
 - Sign In
   - Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
-  - User sees an error alert when no email is present or no password is present.
-  - User sees a loading screen upon tapping the Sign In button.
-    - `alertController.dismissViewControllerAnimated(true, completion: nil)` dismisses the alert controller loading screen with no buttons.
-  - User sees an error alert when entering the wrong email/password combination.
-  - User is taken to the tutorial screens upon entering the correct email/password combination.
+  - Upon tapping the Sign In button.
+     - If the username or password fields are empty, user sees an error alert.
+     - If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
+     - If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Tutorial screens.
   - Optional: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
   - Optional: On appear, scale the form up and fade it in.
 - Optional: Create a Dropbox
@@ -101,15 +100,20 @@ The key to implementing a complex app is to break it up into a bunch of small pi
 3. **Tutorial Screens**
   - Create a custom free form view controller that is wide enough for 4 screens. [Creating Custom View Controllers](https://guides.codepath.com/ios/Creating-Custom-View-Controllers), [Creating a Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
   - Add a UIScrollView with paging enabled. 
-  - Add 4 UIImageViews for the tutorial screens (Note: we're explicitly not using UIPageViewController, which requires extra coding, to build these screens)
+  - Add 4 UIImageViews for the tutorial screens (Note: we're explicitly **NOT** using **UIPageViewController**, which requires extra coding)
   - Add a UIPageControl 
      - The UIPageControl should be outside and in front of the scrollview. 
      - Set the page of the UIPageControl by referencing events from the UIScrollView. [Using UIPageControl](https://guides.codepath.com/ios/Using-UIPageControl)
+     - Note: You may need to adjust the *Tint Color* and *Current Page* color for the page indicators to be visible on top of the white background.
   - Add the "Take Carousel for a Spin" button (should be outside the scrollview). 
-     - Set the button to have an initial alpha of 0, 
-     - Upon reaching the 4th page, the alpha should be set to 1 
   - Tapping the "Take Carousel for a Spin" button should launch the Image Timeline modally.
      - Since the Image Timeline will have a NavigationController, the above modal Segue should point to the Image Timeline NavigationController. 
+  - **Optional:** Upon reaching the 4th page, ``page == 4``:
+     - The PageContol indicators disappear
+        - ``pageControl.hidden = true`` 
+     - The *take_for_a_spin* button should fade in. 
+        - ``button.alpha = 0`` within ``viewDidLoad()`` method   
+        - animate ``button.alpha = 1``
 4. **Image Timeline**
   - Add a UIImageView for the custom nav bar
   - Add a UIScrollView for the image feed.
