@@ -141,12 +141,12 @@ totalLabel.text = "\(total)"
   * drag and drop a **Tap Gesture Recognizer** onto the screen
   * Add an **Action** by ``ctrl + Drag`` from the gesture recognizer icon (that appears on the top part of the ViewController) to the bottom of the Assistant editor code file, just below the previous method you created.
   * Set the *Connection* to **Action**
-  * Name, ``onEditingChanged``
+  * Name, ``didTap``
   * Click, **Connect**  
 
 ![|800](http://i.imgur.com/0v3F1m1.gif)
 
-  * Within the ``onTap`` method, add...
+  * Within the ``didTap`` method, add...
 
 ```Swift
 view.endEditing(true)
