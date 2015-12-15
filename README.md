@@ -16,7 +16,7 @@
   * Click the Storyboard
      * Uncheck the *Use Auto Layout* checkbox 
      * Disable size classes  
-![|800](http://i.imgur.com/zjqYSUT.gif)
+![|800](http://i.imgur.com/zjqYSUT.gif)  
 
 ###3. Build out Static View based on Mock
   * Typsy Mock  
