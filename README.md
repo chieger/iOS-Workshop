@@ -20,7 +20,8 @@
 
 ###3. Build out Static View based on Mock
   * Typsy Mock  
-![|300](http://i.imgur.com/VLZWM0d.png)  
+<src img="http://i.imgur.com/VLZWM0d.png" width="250" />  
+  
   * In the object library (bottom of utilities pane, right side of screen), search for **uilabel** 
   * Drag a **uilabel** onto the screen (ViewController) in the location where *Bill Amount* is in the mock.
   * Use ``opt + drag`` to clone the uilabel.
